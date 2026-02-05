@@ -28,7 +28,7 @@ if st.button("Explain it!"):
             client = genai.Client(api_key=api_key)
 
             response = client.models.generate_content(
-                model="gemini-1.5-flash-002",
+                model="gemini-pro",
                 contents=f"You are a friendly Orthodontist. Explain '{user_term}' to a 12-year-old patient using a simple analogy. Keep it under 3 sentences."
             )
 
